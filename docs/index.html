@@ -8,11 +8,27 @@
       content="0;URL= data:text/html;charset=utf-8,/content.html"
     />
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
-    111
+    <ul>
+      <li>
+       1
+      </li>
+    </ul>
+    <textarea id="markdownInput" ></textarea>
+   <div id="markdownPreview"></div>
   </body>
   <script>
-    alter(window.navigator.standalone, "----")
+     console.log(marked,'marked')
+        let str ='html <p>123331<p>'
+         document.getElementById('markdownPreview').innerHTML = marked.marked(str)
+   
+    //   document.getElementById('markdownInput').addEventListener('input', function(e) {
+    //     var markdownText = e.target.value;
+    //     var htmlText = marked(markdownText);
+  
+    // });
   </script>
+
 </html>
