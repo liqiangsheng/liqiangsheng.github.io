@@ -7,29 +7,64 @@
       http-equiv="refresh"
       content="0;URL= data:text/html;charset=utf-8,/content.html"
     />
-    <title>Document</title>
+    <title>入口</title>
     <link rel="stylesheet" href="./css/global.css" />
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+     <style type="text/css">
+       .header{width: 100%;height: 68px;background: linear-gradient( 207deg, #00BAFF 0%, #0084FF 100%);}
+       .title{
+        padding: 0 10px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1040px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-weight: 600;
+        font-size: 22px;
+        color: #fff;
+        line-height: 30px;
+        text-align: left;
+       }
+       .ul{
+        padding: 20px 10px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1040px;
+        margin: 0 auto;
+       }
+       .li{
+        padding: 10px 0;
+        box-sizing: border-box;
+        font-weight: 500;
+        font-size: 18px;
+        color: #444651;
+        line-height: 25px;
+        border-bottom: 1px solid #E1E2E9;
+        display: flex;
+        justify-content: space-between;
+       }
+     </style>
+     <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_19405_183.ac9af85c882517597354b256b44e5275.js"></script>
   </head>
   <body>
-    <ul>
-      <li>
-       1
-      </li>
-    </ul>
-    <textarea id="markdownInput" ></textarea>
-   <div id="markdownPreview" class="u-border-1">121</div>
+    <div class="header">
+        <div class="title">Li Qiang Sheng</div>
+    </div>
+    <div class="ul">
+      <a class="li"  href="./6-20.html">
+        <span>6-20</span>
+        <iconpark-icon name="arrow-right"></iconpark-icon>
+      </a>
+      <a class="li"   href="https://github.com/liqiangsheng" target="_blank">
+        <span>github</span>
+        <iconpark-icon name="arrow-right"></iconpark-icon>
+      </a>
+    </div>
+
   </body>
   <script>
-     console.log(marked,'marked')
-        let str ='html <p>123331<p>'
-         document.getElementById('markdownPreview').innerHTML = marked.marked(str)
-   
-    //   document.getElementById('markdownInput').addEventListener('input', function(e) {
-    //     var markdownText = e.target.value;
-    //     var htmlText = marked(markdownText);
-  
-    // });
+
   </script>
 
 </html>
