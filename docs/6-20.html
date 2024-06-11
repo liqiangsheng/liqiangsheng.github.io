@@ -13,35 +13,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_19405_183.ac9af85c882517597354b256b44e5275.js"></script>
   </head>
   <body>
-    <ul>
-      <li>
-       1
-      </li>
-    </ul>
-    <textarea id="markdownInput" ></textarea>
-   <div id="markdownPreview" class="u-border-1">121</div>
-   <div id="content"></div>
+    <div class="header">
+      <a class="title content" href="index.html"><iconpark-icon size="26" name="left-6omd5bhh"></iconpark-icon> <span> 6-20</span></a>
+  </div>
+  <div class="content-box content">
+    <div id="content"></div>
+  </div>
+
   </body>
     <!-- 自动寻找并高亮代码块 -->
   <script>hljs.highlightAll();</script>
   <script>
-     console.log(marked,'marked')
-        let str ='html <p>123331<p>'
-         document.getElementById('markdownPreview').innerHTML = marked.marked(str)
-   
+        //  写入md内容
          document.addEventListener('DOMContentLoaded', function() {
-    // 获取Markdown内容
-    var markdownText = document.getElementById('markdown-content').textContent;
-    
-    // 使用marked将Markdown转换为HTML
-    var htmlContent = marked.marked(markdownText);
-    
-    // 将转换后的HTML插入到页面的指定元素中
-    document.getElementById('content').innerHTML = htmlContent;
-});
+          setMarkdown('markdown-content','content')
+      });
+      function setMarkdown(scriptId,msgId) {
+           // 获取Markdown内容
+           var markdownText = document.getElementById(scriptId).textContent;
+          // 使用marked将Markdown转换为HTML
+          var htmlContent = marked.marked(markdownText);
+          // 将转换后的HTML插入到页面的指定元素中
+          document.getElementById(msgId).innerHTML = htmlContent;
+      }
   </script>
+  <!-- 每一个md都有自己的html -->
 <script id="markdown-content" type="text/markdown">
   # 我的Markdown标题
   
