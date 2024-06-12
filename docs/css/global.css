@@ -337,3 +337,43 @@ img {
   padding: 20px 10px;
   box-sizing: border-box;
  }
+ .waring{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #eef0f4;
+  border-left: 8px solid #dddfe4;
+  color: rgba(0, 0, 0, .5);
+  margin-top: 10px;
+ }
+ .content_h2{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.content_title{
+ font-size: 20px;
+ margin: 10px 0;
+ line-height: 25px;
+ font-weight: 500;
+}
+.content_ul li{
+ font-size: 16px;
+ margin: 10px 0;
+ line-height: 25px;
+ font-weight: 400;
+}
+.content_p{
+  margin: 10px;
+  font-size: 16px;
+}
+.u-m-t-10{
+  margin-top: 10px;
+}
+.u-m-b-10{
+  margin-bottom: 10px;
+}
+a{
+  color: #0084FF;
+}

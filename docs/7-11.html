@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      http-equiv="refresh"
+      content="0;URL= data:text/html;charset=utf-8,/content.html"
+    />
+    <title>Markdown</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <!-- 引入 highlight.js 核心库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_19405_183.ac9af85c882517597354b256b44e5275.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <a class="title content" href="index.html"><iconpark-icon size="26" name="left-6omd5bhh"></iconpark-icon> <span> 6-20</span></a>
+  </div>
+  <div class="content-box content">
+    <div id="content"></div>
+  </div>
+
+  </body>
+    <!-- 自动寻找并高亮代码块 -->
+  <script>hljs.highlightAll();</script>
+  <script>
+        //  写入md内容
+         document.addEventListener('DOMContentLoaded', function() {
+          setMarkdown('markdown-content','content')
+      });
+      function setMarkdown(scriptId,msgId) {
+           // 获取Markdown内容
+           var markdownText = document.getElementById(scriptId).textContent;
+          // 使用marked将Markdown转换为HTML
+          var htmlContent = marked.marked(markdownText);
+          // 将转换后的HTML插入到页面的指定元素中
+          document.getElementById(msgId).innerHTML = htmlContent;
+      }
+  </script>
+  <!-- 每一个md都有自己的html -->
+<script id="markdown-content" type="text/markdown">
+
+   ## jQuery 语法
+
+  > 通过 jQuery，您可以选取（查询，query） HTML 元素，并对它们执行"操作"（actions）。
+
+   ```javascript
+    // jQuery 语法是通过选取 HTML 元素，并对选取的元素执行某些操作。
+
+    // 基础语法： $(selector).action()
+
+    // 美元符号定义 jQuery
+    //  选择符（selector）"查询"和"查找" HTML 元素
+    //  jQuery 的 action() 执行对元素的操作
+    //  实例:
+
+      $(this).hide() - 隐藏当前元素
+
+      $("p").hide() - 隐藏所有段落
+
+      $("p .test").hide() - 隐藏所有 class="test" 的段落
+
+      $("#test").hide() - 隐藏所有 id="test" 的元素
+   ```
+
+   #### 文档就绪事件
+
+
+   ```javascript
+    $(document).ready(function(){
+
+      // 开始写 jQuery 代码...
+  
+    });
+   // 这是为了防止文档在完全加载（就绪）之前运行 jQuery 代码。简洁写法（与以上写法效果相同）:
+    $(function(){
+
+      // 开始写 jQuery 代码...
+   
+    }); 
+   ```
+
+  </script>
+</html>

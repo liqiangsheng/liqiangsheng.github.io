@@ -7,19 +7,317 @@
       http-equiv="refresh"
       content="0;URL= data:text/html;charset=utf-8,/content.html"
     />
-    <title>Document</title>
+    <title>Markdown</title>
     <link rel="stylesheet" href="./css/global.css" />
+    <style type="text/css">
+ 
+    </style>
     <!-- 引入 highlight.js 核心库 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+ 
     <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_19405_183.ac9af85c882517597354b256b44e5275.js"></script>
   </head>
   <body>
     <div class="header">
-      <a class="title content" href="index.html"><iconpark-icon size="26" name="left-6omd5bhh"></iconpark-icon> <span> 6-20</span></a>
+      <a class="title content" href="index.html"><iconpark-icon size="26" name="left-6omd5bhh"></iconpark-icon> <span>  Markdown </span></a>
   </div>
   <div class="content-box content">
+    <h2 class="content_h2">
+      Markdown语法。Markdown 是一种轻量级标记语言，通俗的说你记笔记写博客的时候不用管排版如何，只要将自己的内容写上去，Markdown语法就可以给你搞定一切
+    </h2>
+    <div>
+       <div class="content_title"> 一、Markdown是什么</div>
+       <ul  class="content_ul">
+        <li>Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。</li>
+        <li>Markdown 允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的HTML文档。</li>
+        <li>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。</li>
+        <li>Markdown 编写的文档后缀为 .md, .markdown。</li>
+       </ul>
+    </div>
+    <!--   Markdown的基本语法 -->
+      <div>
+        <div class="content_h2">
+          Markdown的基本语法
+         </div>
+         <ul class="content_ul">
+          <li># 一级标题</li>
+          <li>## 二级标题</li>
+          <li> ### 三级标题</li>
+          <li>#### 四级标题</li>
+          <li>##### 五级标题</li>
+          <li> ###### 六级标题</li>
+         </ul>
+         <img src="https://public.metahomes.net/public/dev/manager/template/1/na18vik6/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+         <div class="waring">
+          注意：
+    
+            最后一个#字符与标题中间留一个空格
+            标题应该置于行首，如果放入表格中可能无法正确解析
+         </div>
+      </div>
+           <!-- 3.2 字体 -->
+          <div>
+            <div class="content_h2">
+              3.2 字体
+            </div>
+            <p class="content_p">星号与下划线都可以，单是斜体，双是粗体，三是粗斜体</p>
+            <img src="https://public.metahomes.net/public/dev/manager/template/1/iwuz7qyp/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+            <div class="waring">
+              快捷键：
+                  加粗Ctrl+B
+                  斜体Ctrl+I
+            </div>
+         </div>
+             <!--  3.3 换行  -->
+                <div>
+        
+                  <div class="content_h2">
+                    3.3 换行
+                  </div>
+                  <p class="content_p">Markdown换行的方式有很多种:</p>
+                  <ul class="content_ul">
+                    <li>直接在一句话后敲两个空格</li>
+                    <li>两句话之间加一个空行</li>
+                    <li>如果你在编辑的时候，想让一行文字在显示的时候换行，就在中间加<br/></li>
+                  </ul>
+              
+                </div>
+           
+                       
+       
+         <!--  3.4 引用 -->
+         <div>
+            <div class="content_h2">
+              3.4 引用
+            </div>
+            <p class="content_p">Markdown 中引用通过符号 > 来实现。> 符号后的空格，可有可无。
+            在引用的区块内，允许换行存在，换行并不会终止引用的区块。如果要结束引用，需要一行空白行，来结束引用的区块。</p>
+    
+            <div class="waring">
+            这是一个引用
+                此外，引用还可以嵌套使用：
+                代码：
+            </div>
+            <img class="u-m-t-10" src="https://public.metahomes.net/public/dev/manager/template/1/gefx15l4/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+            <ul class="content_ul">
+            <li>>这是一个引用：</li>
+            <li>>>这是一个引用的引用</li>
+            <li>>>>这是一个引用的引用的引用</li>
+            </ul>
+            <img src="https://public.metahomes.net/public/dev/manager/template/1/23ut0c2w/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+        </div>
+         <!-- 3.5 链接 -->
+         <div>
+            <div class="content_h2">
+              3.5 链接
+            </div>
+            <p class="content_p">Markdown中插入链接的使用方式是：
+              代码：</p>
+    
+            <div class="waring">
+              [链接名称](链接地址)
+              <链接地址>
+              即是：
+              [这是xx的主页](https://liqiangsheng.github.io/)
+              或者
+              <https://liqiangsheng.github.io/>
+              
+            </div>
+            <p class="content_p">效果：</p>
+            <div class="waring">
+              <a href="https://liqiangsheng.github.io/"> 这是xx的主页</a>
+              </br>或者
+              <a href="https://liqiangsheng.github.io/">https://liqiangsheng.github.io/</a>
+              
+            </div>
+         </div>
+         <!-- 3.6 图片 -->
+         <div>
+            <div class="content_h2">
+              3.6 图片
+            </div>
+            <p class="content_p">Markdown中插入图片的使用方式是：
+              代码：</p>
+    
+            <div class="waring">
+              ![图片描述，可写可不写，但是中括号要有](图片地址，本地链接或者URL地址。)
+              比如我此文章的图片：
+              ![LQ](https://public.metahomes.net/public/dev/manager/template/1/23ut0c2w/F0BB4496-1270-4630-AF6D-2058B2A0053F.png)
+              
+              
+            </div>
+            <p class="content_p">效果：</p>
+            <img src="https://public.metahomes.net/public/dev/manager/template/1/23ut0c2w/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+         </div>
+         <!-- 3.7 列表 -->
+         <div>
+            <div class="content_h2">
+              3.7 列表
+            </div>
+            <p class="content_p">列表分为有序列表和无序列表：</p>
+            <ul class="content_ul">
+              <li>无序列表，使用*、+、-，再加一个空格作为列表的标记</li>
+              <li>有序列表，使用数字并加上.号，再加一个空格作为列表的标记
+                代码：</li>
+            </ul>
+       
+            <ul class="content_ul">
+            
+              <li>* 无序列表 1</li>
+              <li>+ 无序列表 2</li>
+              <li>- 无序列表 3</li>
+              <li  ></li>
+              <li>1. 有序列表 1</li>
+              <li>2. 有序列表 2</li>
+              <li>3. 有序列表 3</li>
+            </ul>
+            <p class="content_p">效果：</p>
+            <div class="waring">
+              <ul class="content_ul">
+                <li  style="list-style: square inside">无序列表 1</li>
+                <li style="list-style: square inside">无序列表 2</li>
+                <li style="list-style: square inside">无序列表 3</li>
+                <li  ></li>
+                <li>1. 有序列表 1</li>
+                <li>2. 有序列表 2</li>
+                <li>3. 有序列表 3</li>
+              </ul>
+            </div>
+        
+         </div>
+         <!-- 3.8 分割线 -->
+         <div>
+            <div class="content_h2">
+              3.8 分割线
+            </div>
+            <p class="content_p">Markdown中给出了多种分割线的样式，我们可以使用分割线让文章结构更加的清晰。
+              分割线的使用，可以在一行中用三个-or*来建立一个分割线，但是注意：在分割线的上面空一行！！！</p>
+            <ul class="content_ul">
+              <li>无序列表，使用*、+、-，再加一个空格作为列表的标记</li>
+              <li>有序列表，使用数字并加上.号，再加一个空格作为列表的标记
+                代码：</li>
+            </ul>
+       
+             <img src="https://public.metahomes.net/public/dev/manager/template/1/9cmj7898/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+        
+         </div>
+         <!-- 3.9 删除线 -->
+         <div>
+            <div class="content_h2">
+              3.9 删除线
+            </div>
+            <p class="content_p">删除线的的使用，可以在要添加删除线的文字前后添加两个~
+              代码</p>
+            <ul class="content_ul">
+              <li>~~这是要被删除的文字~~</li>
+            </ul>
+            <div class="waring" >
+              <del>这是要被删除的文字</del>
+            </div>
+        
+         </div>
+         <!-- 3.10 下划线 -->
+         <div>
+            <div class="content_h2">
+              3.10 下划线
+            </div>
+            <p class="content_p">下划线的使用和html中类似，在需要添加下划线的文字首尾添加<u>文本</u>
+              代码</p>
+            <div class="waring" style="text-decoration:underline">
+             这行文字已被添加下划线
+            </div>
+        
+         </div>
+         <!--3.11 代码块 -->
+         <div>
+            <div class="content_h2">
+              3.11 代码块
+            </div>
+            <p class="content_p">Markdown中代码块有两种：
+              如果在一行内需要引用代码，只需要用反引号`引起来就好了。
+             
+            </p>
+            <p class="content_p">
+              代码：`Hello` World.
+            </p>
+            <img src="https://public.metahomes.net/public/dev/manager/template/1/mhbgz3r2/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+            <p class="content_p">如果是在一个块内需要引用代码，则在需要引用的代码块的前一行和后一行使用三个反引号，同时在前一个反引号后写入代码的语言。<br/>
+              代码：
+            </p>
+            <div class="waring" style="text-decoration:underline">
+              ```javascript
+              console.log('Hello World');
+              ```
+            </div>
+            <p class="content_p">支持以下语言：
+            </p>
+            <div class="waring">bash
+              c，clojure，cpp，cs，css
+              dart，dockerfile, diff
+              erlang
+              go，gradle，groovy
+              haskell
+              java，javascript，json，julia
+              kotlin
+              lisp，lua
+              makefile，markdown，matlab
+              objectivec
+              perl，php，python
+              r，ruby，rust
+              scala，shell，sql，swift
+              tex，typescript
+              verilog，vhdl
+              xml
+              yaml
+              
+            </div>
+           </div>
+            <!-- 3.12 表格 -->
+            <div>
+              <div class="content_h2">
+                3.12 表格
+              </div>
+              <p class="content_p">
+                表格使用|来分割不同的单元格，使用-来分隔表头和其他行
+              </p>
+              <ul class="content_ul">
+                <li>:-：将表头及单元格内容左对齐</li>
+                <li> -:：将表头及单元格内容右对齐</li>
+                <li>:-:：将表头及单元格内容居中</li>
+              </ul>
+              <img src="https://public.metahomes.net/public/dev/manager/template/1/i5ykl8ja/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+          
+            </div>
+            <!--3.13 脚注 -->
+            <div>
+              <div class="content_h2">
+                3.13 脚注
+              </div>
+              <p class="content_p">
+                脚注是对文本的备注，我们时长在论文中看到脚注，在Markdown中的使用方法
+              </p>
+              <div class="waring">
+                使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Typora[^T]
+                <ul class="content_ul">
+                  <li>[^1]:Markdown是一种纯文本标记语言</li>
+                  <li>[^2]:HyperText Markup Language 超文本标记语言</li>
+                  <li>[^T]:NEW WAY TO READ & WRITE MARKDOWN.</li>
+                </ul>
+              </div>
+           
+              <img src="https://public.metahomes.net/public/dev/manager/template/1/h3qoug8s/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+            </div>
+            <div class="content_h2">
+              <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-%E9%AB%98%E9%98%B6%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C">四、Markdown的高级用法</a>  
+            </div>
+     <div>
+
+
+
+
     <div id="content"></div>
   </div>
 
@@ -35,22 +333,396 @@
            // 获取Markdown内容
            var markdownText = document.getElementById(scriptId).textContent;
           // 使用marked将Markdown转换为HTML
-          var htmlContent = marked.marked(markdownText);
+          var htmlContent = marked.parse(markdownText);
           // 将转换后的HTML插入到页面的指定元素中
           document.getElementById(msgId).innerHTML = htmlContent;
       }
   </script>
   <!-- 每一个md都有自己的html -->
 <script id="markdown-content" type="text/markdown">
-  # 我的Markdown标题
-  
-  这里是正文内容，可以包含**粗体**、*斜体*、[链接](https://example.com)等Markdown语法。
+  [『Cmd 技术渲染的沙箱页面，点击此处编写自己的文档』](https://www.zybuluo.com/mdeditor "作业部落旗下 Cmd 在线 Markdown 编辑阅读器")
 
-  ```javascript
-  function sayHello(name) {
-      console.log('Hello, ' + name);
-  }
+  # Cmd Markdown 简明语法手册
+  
+  标签： Cmd-Markdown
+  
+  ---
+  
+  ### 1. 斜体和粗体
+  
+  使用 * 和 ** 表示斜体和粗体。
+  
+  示例：
+  
+  这是 *斜体*，这是 **粗体**。
+  
+  ### 2. 分级标题
+  
+  使用 === 表示一级标题，使用 --- 表示二级标题。
+  
+  示例：
+  
   ```
+  这是一个一级标题
+  ============================
+  
+  这是一个二级标题
+  --------------------------------------------------
+  
+  ### 这是一个三级标题
+  ```
+  
+  你也可以选择在行首加井号表示不同级别的标题 (H1-H6)，例如：# H1, ## H2, ### H3，#### H4。
+  
+  ### 3. 外链接
+  
+  使用 \[描述](链接地址) 为文字增加外链接。
+  
+  示例：
+  
+  这是去往 [本人博客](http://ghosertblog.github.com) 的链接。
+  
+  ### 4. 无序列表
+  
+  使用 *，+，- 表示无序列表。
+  
+  示例：
+  
+  - 无序列表项 一
+  - 无序列表项 二
+  - 无序列表项 三
+  
+  ### 5. 有序列表
+  
+  使用数字和点表示有序列表。
+  
+  示例：
+  
+  1. 有序列表项 一
+  2. 有序列表项 二
+  3. 有序列表项 三
+  
+  ### 6. 文字引用
+  
+  使用 > 表示文字引用。
+  
+  示例：
+  
+  > 野火烧不尽，春风吹又生。
+  
+  ### 7. 行内代码块
+  
+  使用 \`代码` 表示行内代码块。
+  
+  示例：
+  
+  让我们聊聊 `html`。
+  
+  ### 8.  代码块
+  
+  使用 四个缩进空格 表示代码块。
+  
+  示例：
+  
+      这是一个代码块，此行左侧有四个不可见的空格。
+  
+  ### 9.  插入图像
+  
+  使用 \!\[描述](图片链接地址) 插入图像。
+  
+  示例：
+  
+  ![我的头像](https://www.zybuluo.com/static/img/my_head.jpg)
+  
+  # Cmd Markdown 高阶语法手册
+  
+  ### 1. 内容目录
+  
+  在段落中填写 `[TOC]` 以显示全文内容的目录结构。
+  
+  [TOC]
+  
+  ### 2. 标签分类
+  
+  在编辑区任意行的列首位置输入以下代码给文稿标签：
+  
+  标签： 数学 英语 Markdown
+  
+  或者
+  
+  Tags： 数学 英语 Markdown
+  
+  ### 3. 删除线
+  
+  使用 ~~ 表示删除线。
+  
+  ~~这是一段错误的文本。~~
+  
+  ### 4. 注脚
+  
+  使用 [^keyword] 表示注脚。
+  
+  这是一个注脚[^footnote]的样例。
+  
+  这是第二个注脚[^footnote2]的样例。
+  
+  ### 5. LaTeX 公式
+  
+  $ 表示行内公式： 
+  
+  质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
+  
+  $$ 表示整行公式：
+  
+  $$\sum_{i=1}^n a_i=0$$
+  
+  $$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+  
+  $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+  
+  访问 [MathJax](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) 参考更多使用方法。
+  
+  ### 6. 加强的代码块
+  
+  支持四十一种编程语言的语法高亮的显示，行号显示。
+  
+  非代码示例：
+  
+  ```
+  $ sudo apt-get install vim-gnome
+  ```
+  
+  Python 示例：
+  
+  ```python
+  @requires_authorization
+  def somefunc(param1='', param2=0):
+      '''A docstring'''
+      if param1 > param2: # interesting
+          print 'Greater'
+      return (param2 - param1 + 1) or None
+  
+  class SomeClass:
+      pass
+  
+  >>> message = '''interpreter
+  ... prompt'''
+  ```
+  
+  JavaScript 示例：
+  
+  ``` javascript
+  /**
+  * nth element in the fibonacci series.
+  * @param n >= 0
+  * @return the nth element, >= 0.
+  */
+  function fib(n) {
+    var a = 1, b = 1;
+    var tmp;
+    while (--n >= 0) {
+      tmp = a;
+      a += b;
+      b = tmp;
+    }
+    return a;
+  }
+  
+  document.write(fib(10));
+  ```
+  
+  ### 7. 流程图
+  
+  #### 示例
+  
+  ```flow
+  st=>start: Start:>https://www.zybuluo.com
+  io=>inputoutput: verification
+  op=>operation: Your Operation
+  cond=>condition: Yes or No?
+  sub=>subroutine: Your Subroutine
+  e=>end
+  
+  st->io->op->cond
+  cond(yes)->e
+  cond(no)->sub->io
+  ```
+  
+  #### 更多语法参考：[流程图语法参考](http://adrai.github.io/flowchart.js/)
+  
+  ### 8. 序列图
+  
+  #### 示例 1
+  
+  ```seq
+  Alice->Bob: Hello Bob, how are you?
+  Note right of Bob: Bob thinks
+  Bob-->Alice: I am good thanks!
+  ```
+  
+  #### 示例 2
+  
+  ```seq
+  Title: Here is a title
+  A->B: Normal line
+  B-->C: Dashed line
+  C->>D: Open arrow
+  D-->>A: Dashed open arrow
+  ```
+  
+  #### 更多语法参考：[序列图语法参考](http://bramp.github.io/js-sequence-diagrams/)
+  
+  ### 9. 甘特图
+  
+  甘特图内在思想简单。基本是一条线条图，横轴表示时间，纵轴表示活动（项目），线条表示在整个期间上计划和实际的活动完成情况。它直观地表明任务计划在什么时候进行，及实际进展与计划要求的对比。
+  
+  ```gantt
+      title 项目开发流程
+      section 项目确定
+          需求分析       :a1, 2016-06-22, 3d
+          可行性报告     :after a1, 5d
+          概念验证       : 5d
+      section 项目实施
+          概要设计      :2016-07-05  , 5d
+          详细设计      :2016-07-08, 10d
+          编码          :2016-07-15, 10d
+          测试          :2016-07-22, 5d
+      section 发布验收
+          发布: 2d
+          验收: 3d
+  ```
+  
+  #### 更多语法参考：[甘特图语法参考](https://knsv.github.io/mermaid/#gant-diagrams)
+  
+  ### 10. Mermaid 流程图
+  
+  ```graphLR
+      A[Hard edge] -->|Link text| B(Round edge)
+      B --> C{Decision}
+      C -->|One| D[Result one]
+      C -->|Two| E[Result two]
+  ```
+  
+  #### 更多语法参考：[Mermaid 流程图语法参考](https://knsv.github.io/mermaid/#flowcharts-basic-syntax)
+  
+  ### 11. Mermaid 序列图
+  
+  ```sequence
+      Alice->John: Hello John, how are you?
+      loop every minute
+          John-->Alice: Great!
+      end
+  ```
+  
+  #### 更多语法参考：[Mermaid 序列图语法参考](https://knsv.github.io/mermaid/#sequence-diagrams)
+  
+  ### 12. 表格支持
+  
+  | 项目        | 价格   |  数量  |
+  | --------   | -----:  | :----:  |
+  | 计算机     | \$1600 |   5     |
+  | 手机        |   \$12   |   12   |
+  | 管线        |    \$1    |  234  |
+  
+  
+  ### 13. 定义型列表
+  
+  名词 1
+  :   定义 1（左侧有一个可见的冒号和四个不可见的空格）
+  
+  代码块 2
+  :   这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）
+  
+          代码块（左侧有八个不可见的空格）
+  
+  ### 14. Html 标签
+  
+  本站支持在 Markdown 语法中嵌套 Html 标签，譬如，你可以用 Html 写一个纵跨两行的表格：
+  
+      <table>
+          <tr>
+              <th rowspan="2">值班人员</th>
+              <th>星期一</th>
+              <th>星期二</th>
+              <th>星期三</th>
+          </tr>
+          <tr>
+              <td>李强</td>
+              <td>张明</td>
+              <td>王平</td>
+          </tr>
+      </table>
+  
+  
+  <table>
+      <tr>
+          <th rowspan="2">值班人员</th>
+          <th>星期一</th>
+          <th>星期二</th>
+          <th>星期三</th>
+      </tr>
+      <tr>
+          <td>李强</td>
+          <td>张明</td>
+          <td>王平</td>
+      </tr>
+  </table>
+  
+  ### 15. 内嵌图标
+  
+  本站的图标系统对外开放，在文档中输入
+  
+      <i class="icon-weibo"></i>
+  
+  即显示微博的图标： <i class="icon-weibo icon-2x"></i>
+  
+  替换 上述 `i 标签` 内的 `icon-weibo` 以显示不同的图标，例如：
+  
+      <i class="icon-renren"></i>
+  
+  即显示人人的图标： <i class="icon-renren icon-2x"></i>
+  
+  更多的图标和玩法可以参看 [font-awesome](http://fortawesome.github.io/Font-Awesome/3.2.1/icons/) 官方网站。
+  
+  ### 16. 待办事宜 Todo 列表
+  
+  使用带有 [ ] 或 [x] （未完成或已完成）项的列表语法撰写一个待办事宜列表，并且支持子列表嵌套以及混用Markdown语法，例如：
+  
+      - [ ] **Cmd Markdown 开发**
+          - [ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率
+          - [ ] 支持以 PDF 格式导出文稿
+          - [x] 新增Todo列表功能 [语法参考](https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments)
+          - [x] 改进 LaTex 功能
+              - [x] 修复 LaTex 公式渲染问题
+              - [x] 新增 LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.html#tex-eq-numbers)
+      - [ ] **七月旅行准备**
+          - [ ] 准备邮轮上需要携带的物品
+          - [ ] 浏览日本免税店的物品
+          - [x] 购买蓝宝石公主号七月一日的船票
+          
+  对应显示如下待办事宜 Todo 列表：
+          
+  - [ ] **Cmd Markdown 开发**
+      - [ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率
+      - [ ] 支持以 PDF 格式导出文稿
+      - [x] 新增Todo列表功能 [语法参考](https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments)
+      - [x] 改进 LaTex 功能
+          - [x] 修复 LaTex 公式渲染问题
+          - [x] 新增 LaTex 公式编号功能 [语法参考](http://docs.mathjax.org/en/latest/tex.html#tex-eq-numbers)
+  - [ ] **七月旅行准备**
+      - [ ] 准备邮轮上需要携带的物品
+      - [ ] 浏览日本免税店的物品
+      - [x] 购买蓝宝石公主号七月一日的船票
+          
+          
+  [^footnote]: 这是一个 *注脚* 的 **文本**。
+  
+  [^footnote2]: 这是另一个 *注脚* 的 **文本**。
+  
+  
+
+
+</script>
 
   </script>
 </html>
