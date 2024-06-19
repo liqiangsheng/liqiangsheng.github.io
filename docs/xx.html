@@ -7,51 +7,24 @@
       http-equiv="refresh"
       content="0;URL= data:text/html;charset=utf-8,/content.html"
     />
-    <title>Document</title>
+    <title>Markdown</title>
     <link rel="stylesheet" href="./css/global.css" />
     <!-- 引入 highlight.js 核心库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_19405_183.ac9af85c882517597354b256b44e5275.js"></script>
   </head>
   <body>
-    <ul>
-      <li>
-       1
-      </li>
-    </ul>
-    <textarea id="markdownInput" ></textarea>
-   <div id="markdownPreview" class="u-border-1">121</div>
-   <div id="content"></div>
+    <div class="header">
+      <a class="title content" href="index.html"><iconpark-icon size="26" name="left-6omd5bhh"></iconpark-icon> <span> 7-11</span></a>
+  </div>
+  <div class="content-box content">
+    <div>
+      <img src="https://public.metahomes.net/public/dev/manager/template/1/2n8a9z5n/F0BB4496-1270-4630-AF6D-2058B2A0053F.png" alt="">
+    </div>
+  </div>
+
   </body>
-    <!-- 自动寻找并高亮代码块 -->
-  <script>hljs.highlightAll();</script>
-  <script>
-     console.log(marked,'marked')
-        let str ='html <p>123331<p>'
-         document.getElementById('markdownPreview').innerHTML = marked.marked(str)
-   
-         document.addEventListener('DOMContentLoaded', function() {
-    // 获取Markdown内容
-    var markdownText = document.getElementById('markdown-content').textContent;
-    
-    // 使用marked将Markdown转换为HTML
-    var htmlContent = marked.marked(markdownText);
-    
-    // 将转换后的HTML插入到页面的指定元素中
-    document.getElementById('content').innerHTML = htmlContent;
-});
-  </script>
-<script id="markdown-content" type="text/markdown">
-  # 我的Markdown标题
-  
-  这里是正文内容，可以包含**粗体**、*斜体*、[链接](https://example.com)等Markdown语法。
 
-  ```javascript
-  function sayHello(name) {
-      console.log('Hello, ' + name);
-  }
-  ```
-
-  </script>
 </html>
